@@ -1,12 +1,26 @@
 #pragma once
 
 #include <memory>
+#include <iostream>
 
 namespace ft{
-    template< class T, class Allocator = std::allocator<T> > 
+    template< class T, class Alloc = std::allocator<T> > 
     class vector{
-        typedef T
+        private:
 
+        public:
+                typedef T                                               value_type;
+                typedef Alloc                                           allocator_type;
+                typedef typename allocator_type::reference              reference;
+                typedef typename allocator_type::const_reference        const_reference;
+                typedef typename allocator_type::pointer                poiner;
+                typedef typename allocator_type::const_pointer          const_poiner;
+                typedef typename allocator_type::reference              iterator;
+                typedef typename allocator_type::reference              reference;
+                typedef typename allocator_type::reference              reference;
+
+
+                
         // прописать все данные
 public:
         default (1)	
